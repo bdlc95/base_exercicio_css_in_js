@@ -1,13 +1,9 @@
 import styled from 'styled-components'
 
-const corPrincipal = '#a7727d'
-const corSecundaria = '#f7f5f5'
-
-
 export const Form = styled.form`
   display: grid;
   grid-template-columns: 1fr auto;
-  background-color: ${corSecundaria};
+  background-color: var(--cor-secundaria);
   padding: 32px;
   border-radius: 12px;
   margin-top: 40px;
@@ -22,24 +18,19 @@ export const Campo = styled.input`
   font-family: 'Montserrat', sans-serif;
   width: 100%;
 
-
   &:focus {
-    outline-color: ${corPrincipal};
+    outline-color: var(--cor-principal);
   }
 `
 
 export const BtnPesquisar = styled.button`
-  background-color: ${corPrincipal};
-  border: 1px solid ${corPrincipal};
+  background-color: var(--cor-principal);
+  border: 1px solid var(--cor-principal);
   height: 40px;
   padding: 0 16px;
   font-size: 18px;
-  color: ${corSecundaria};
+  color: var(--cor-secundaria);
   margin-left: 8px;
   cursor: pointer;
   border-radius: 8px;
-
-  &:hover {
-    background-color: #925c68;
-  }
 `

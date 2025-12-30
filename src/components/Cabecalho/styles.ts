@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const CabecalhoContainer = styled.header`
-  background-color: #3a3a3a; /* Cor de fundo do cabeçalho */
-  padding: 24px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
   text-align: center;
-  color: #f7f5f5;
+  padding: 24px 0;
 `
 
 export const Titulo = styled.h1`

@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-const corPrincipal = '#a7727d'
-
 export const FormHero = styled.form`
   height: 360px;
   width: 100%;
@@ -11,19 +9,17 @@ export const FormHero = styled.form`
   display: flex;
   align-items: center;
 
-
   &::before {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: ${corPrincipal};
+    background-color: var(--cor-principal);
     content: '';
     opacity: 0.7;
   }
 
-  /* Estilização para dispositivos móveis (Media Query) */
   @media (max-width: 768px) {
     height: auto;
     padding: 24px 0;
@@ -35,7 +31,6 @@ export const HeroTitle = styled.h2`
   font-size: 48px;
   position: relative;
   color: #eee;
-
 
   @media (max-width: 768px) {
     font-size: 32px;
